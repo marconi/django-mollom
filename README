@@ -6,3 +6,22 @@ git clone https://github.com/itkovian/PyMollom
 
 As of the moment, PyMollom doesn't come with a setup file so you have to
 manually copy it inside your python installation's site-packages folder.
+
+PyMollom requires a configuration file (.conf) for your mollom public/private
+keys and other stuff. Here's an example:
+
+  [general]
+  server = http://xmlrpc.mollom.com
+  base_url = <base url goes here>
+
+  [authentication]
+  public key = <public key goes here>
+  private key = <private key goes here>
+
+  [caching]
+  max serverlist days  = 3
+  max serverlist hours = 3
+
+Save the file as mollom.conf. Now for django-mollom to find this file,
+you need to set the MOLLOM_CONFIG_FILE settings in your settings file to the
+absolute path of your mollom.conf file.
