@@ -5,7 +5,7 @@ from django.forms.util import flatatt
 from django.utils.encoding import force_unicode
 from django.conf import settings
 
-from mollom.PyMollom.Mollom import MollomBase
+from PyMollom.Mollom import MollomBase
 
 class CaptchaInput(Input):
     """
