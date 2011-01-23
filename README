@@ -1,0 +1,8 @@
+Django Mollom have one dependency, the PyMollom module.
+
+First you need to install PyMollom:
+
+git clone https://github.com/itkovian/PyMollom
+
+As of the moment, PyMollom doesn't come with a setup file so you have to
+manually copy it inside your python installation's site-packages folder.
