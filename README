@@ -2,7 +2,7 @@ Django Mollom have one dependency, the PyMollom module.
 
 First you need to install PyMollom:
 
-git clone https://github.com/itkovian/PyMollom
+  git clone https://github.com/itkovian/PyMollom
 
 As of the moment, PyMollom doesn't come with a setup file so you have to
 manually copy it inside your python installation's site-packages folder.
@@ -25,3 +25,15 @@ keys and other stuff. Here's an example:
 Save the file as mollom.conf. Now for django-mollom to find this file,
 you need to set the MOLLOM_CONFIG_FILE settings in your settings file to the
 absolute path of your mollom.conf file.
+
+When all that is done, you can clone django-mollom using:
+
+  git clone https://github.com/marconi/django-mollom
+
+and run:
+
+  python setup.py install
+
+or you can just run:
+
+  easy_install django-mollom
